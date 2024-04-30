@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#34495E;
+}
+.product {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product a img{
+  opacity: 1.0;
+}
+
+.product a img:hover{
+  opacity: 0.5;
+}
+
+h2 {
+  margin-top: 0;
+}
+.price {
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.buy-btn {
+  background-color: #3498DB;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
