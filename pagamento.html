@@ -113,42 +113,39 @@
         </div>
     </div>
 </main>
-
 <script>
-  function calcularPreco(classe) {
-      var precoInicial = 0;
+function calcularPreco(classe) {
+    var precoInicial = 0;
 
-      // Define o preço inicial com base na classe selecionada
-      switch (classe) {
-          case 'economica':
-              precoInicial = 50; // Ajustado para R$50
-              break;
-          case 'executiva':
-              precoInicial = 300;
-              break;
-          case 'primeira':
-              precoInicial = 400;
-              break;
-          default:
-              break;
-      }
+    // Define o preço inicial com base na classe selecionada
+    switch (classe) {
+        case 'economica':
+            precoInicial = 50;
+            break;
+        case 'executiva':
+            precoInicial = 300;
+            break;
+        case 'primeira':
+            precoInicial = 400;
+            break;
+        default:
+            break;
+    }
 
-      if (document.getElementById(classe + 'Alimentacao').checked) {
-          precoInicial += 10; 
-      }
-      if (classe !== 'primeira' && document.getElementById(classe + 'Wifi').checked) {
-          precoInicial += 20; 
-      }
-      if (document.getElementById(classe + 'Guia').checked) {
-          precoInicial += 30; 
-      }
-      if (document.getElementById(classe + 'Acessibilidade').checked) {
-          precoInicial += 50; 
-      }
-
-      document.getElementById(classe + 'Price').textContent = 'R$ ' + precoInicial.toFixed(2);
-  }
+    if (document.getElementById(classe + 'Alimentacao').checked) {
+        precoInicial += 35;
+    }
+    if (document.getElementById(classe + 'Wifi') && document.getElementById(classe + 'Wifi').checked) {
+        precoInicial += 20;
+    }
+    if (document.getElementById(classe + 'Guia').checked) {
+        precoInicial += 30;
+    }
+    if (document.getElementById(classe + 'Acessibilidade').checked) {
+        precoInicial += 50;
+    }
+    document.getElementById(classe + 'Price').textContent = 'R$ ' + precoInicial.toFixed(2);
+}
 </script>
-
 </body>
 </html>
