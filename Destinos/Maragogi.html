@@ -8,14 +8,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Css/style.css" />
-    <link rel="stylesheet" href="Css/compra.css" />
-    <link rel="stylesheet" href="Css/modal.css" />
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/Css/compra.css" />
+    <link rel="stylesheet" href="/Css/modal.css" />
+    <link rel="stylesheet" href="/Css/pacotes.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     />
-    <title>São Paulo</title>
+    <title>Maragogi</title>
   </head>
   <body>
     <style>
@@ -23,6 +24,24 @@
         background-color: #34495e;
         overflow-x: hidden;
       }
+      
+      .buy-btn {
+        align-self: center;
+        background-color: #3498db;
+        border: none;
+        color: white;
+        padding: 10px 14px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 100px;
+        width: 500px;
+        height: 50px;
+        margin-left: 650px;
+      }
+
     </style>
     <header>
       <div class="container2">
@@ -31,9 +50,8 @@
         </div>
         <div class="menu">
           <nav>
-            <a href="index2.html" style="margin-left: 60px">Home</a>
+            <a href="Home.html" style="margin-left: 60px">Home</a>
             <a href="pacotes.html">Pacotes</a>
-            <a href="#servicos">Nossos veiculos</a>
           </nav>
         </div>
         <div class="social">
@@ -79,7 +97,7 @@
       <div class="row">
         <div class="col-md-3">
           <img
-            src="img/HotelMR/quartosalinas.jpg"
+            src="/img/HotelMR/quartosalinas.jpg"
             alt="Image 1"
             class="img-thumbnail"
             onclick="openModal(0)"
@@ -87,14 +105,14 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/HotelMR//quartosalinas2.jpg"
+            src="/img/HotelMR//quartosalinas2.jpg"
             style="margin-bottom: 20px"
             alt="Image 2"
             class="img-thumbnail"
             onclick="openModal(1)"
           />
           <img
-            src="img/HotelMR//salinas1.jpg"
+            src="/img/HotelMR//salinas1.jpg"
             alt="imagem 3"
             class="img-thumbnail"
             onclick="openModal(2)"
@@ -102,7 +120,7 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/HotelMR//salinas2.png"
+            src="/img/HotelMR//salinas2.png"
             alt="Image 4"
             class="img-thumbnail"
             onclick="openModal(3)"
@@ -110,14 +128,14 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/HotelMR//salinas3.jpg"
+            src="/img/HotelMR//salinas3.jpg"
             style="margin-bottom: 20px"
             alt="Image 5"
             class="img-thumbnail"
             onclick="openModal(4)"
           />
           <img
-            src="img/HotelMR/salinas4.jpg"
+            src="/img/HotelMR/salinas4.jpg"
             alt="imagem 6"
             class="img-thumbnail"
             onclick="openModal(5)"
@@ -161,7 +179,7 @@
       <div class="row">
         <div class="col-md-3" style="margin-left: 220px">
           <img
-            src="img/TurismoMR/marago4.jpg"
+            src="/img/TurismoMR/marago4.jpg"
             class="img-thumbnail"
             alt="imagem 7"
             onclick="openModal(6)"
@@ -169,7 +187,7 @@
         </div>
         <div class="col-md-3" style="margin-left: 20px;">
           <img
-            src="img/TurismoMR/marago1.jpg"
+            src="/img/TurismoMR/marago1.jpg"
             class="img-thumbnail"
             alt="imagem 8"
             onclick="openModal(7)"
@@ -177,7 +195,7 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/TurismoMR/marago3.jpeg"
+            src="/img/TurismoMR/marago3.jpeg"
             class="img-thumbnail"
             alt="imagem 9"
             onclick="openModal(8)"
@@ -185,7 +203,7 @@
         </div>
         <div class="col-md-3" style="margin-left: 665px; margin-bottom: 10px">
           <img
-            src="img/TurismoMR/marago2.jpg"
+            src="/img/TurismoMR/marago2.jpg"
             class="img-thumbnail"
             alt="imagem 10"
             onclick="openModal(9)"
@@ -219,7 +237,7 @@
       <div class="row">
         <div class="col-md-3" style="margin-left: 220px">
           <img
-            src="img/TurismoMR/praia1.jpg"
+            src="/img/TurismoMR/praia1.jpg"
             class="img-thumbnail"
             alt="imagem 11"
             onclick="openModal(10)"
@@ -227,7 +245,7 @@
         </div>
         <div class="col-md-3" style="margin-bottom: 25px">
           <img
-            src="img/TurismoMR/praia2.jpg"
+            src="/img/TurismoMR/praia2.jpg"
             class="img-thumbnail"
             alt="imagem 12"
             onclick="openModal(11)"
@@ -235,7 +253,7 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/TurismoMR/praia3.jpg"
+            src="/img/TurismoMR/praia3.jpg"
             class="img-thumbnail"
             alt="imagem 13"
             onclick="openModal(12)"
@@ -243,7 +261,7 @@
         </div>
         <div class="col-md-3" style="margin-left: 700px">
           <img
-            src="img/TurismoMR/praia4.jpg"
+            src="/img/TurismoMR/praia4.jpg"
             class="img-thumbnail"
             alt="imagem 14"
             onclick="openModal(13)"
@@ -280,7 +298,7 @@
       <div class="row">
         <div class="col-md-3" style="margin-left: 220px">
           <img
-            src="img/TurismoMR/buggy1.jpg"
+            src="/img/TurismoMR/buggy1.jpg"
             class="img-thumbnail"
             alt="imagem 15"
             onclick="openModal(14)"
@@ -288,7 +306,7 @@
         </div>
         <div class="col-md-3" style="margin-bottom: 25px">
           <img
-            src="img/TurismoMR/buggy2.jpg"
+            src="/img/TurismoMR/buggy2.jpg"
             class="img-thumbnail"
             alt="imagem 16"
             onclick="openModal(15)"
@@ -296,7 +314,7 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/TurismoMR/buggy3.jpg"
+            src="/img/TurismoMR/buggy3.jpg"
             class="img-thumbnail"
             alt="imagem 17"
             onclick="openModal(16)"
@@ -330,7 +348,7 @@
       <div class="row">
         <div class="col-md-3" style="margin-left: 220px">
           <img
-            src="img/TurismoMR/artesanato4.jpeg"
+            src="/img/TurismoMR/artesanato4.jpeg"
             class="img-thumbnail"
             alt="imagem 18"
             onclick="openModal(19)"
@@ -338,7 +356,7 @@
         </div>
         <div class="col-md-3" style="margin-bottom: 20px">
           <img
-            src="img/TurismoMR/artesanato2.jpg"
+            src="/img/TurismoMR/artesanato2.jpg"
             class="img-thumbnail"
             alt="imagem 19"
             onclick="openModal(20)"
@@ -346,7 +364,7 @@
         </div>
         <div class="col-md-3">
           <img
-            src="img/TurismoMR/artesanato3.jpg"
+            src="/img/TurismoMR/artesanato3.jpg"
             class="img-thumbnail"
             alt="imagem 20"
             onclick="openModal(19)"
@@ -357,6 +375,11 @@
     </div>
     <br />
     <br />
+    <br>
+    <br>
+    <br>
+
+    <button class="buy-btn">Comprar Pacote</button>
 
     <div class="modal">
       <div class="modal-content">
@@ -366,55 +389,32 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
 
     <script>
       const imageUrls = [
-<<<<<<< HEAD
         "img/HotelMR/quartosalinas.jpg",
         "img/HotelMR/quartosalinas2.jpg",
         "img/HotelMR//salinas1.jpg",
         "img/HotelMR//salinas2.png",
         "img/HotelMR//salinas3.jpg",
         "img/HotelMR//salinas4.jpg",
-        "img/TurismoMR/marago4.jpg",
-        "img/TurismoMR/marago1.jpg",
-        "img/TurismoMR/marago3.jpeg",
-        "img/TurismoMR/marago2.jpg",
-        "img/TurismoMR/praia1.jpg",
-        "img/TurismoMR/praia2.jpg",
-        "img/TurismoMR/praia3.jpg",
-        "img/TurismoMR/praia4.jpg",
-        "img/TurismoMR/buggy1.jpg",
-        "img/TurismoMR/buggy2.jpg",
-        "img/TurismoMR/buggy3.jpg",
-        "img/mercado4.png",
-        "img/TurismoMR/artesanato4.jpeg",
-        "img/TurismoMR/artesanato3.jpg",
-        "img/TurismoMR/artesanato2.jpg",
-=======
-        "img/072bc483-b6eb-4ca4-8ebe-54cbaf56bbf3.jpeg",
-        "img/274722f3-8d88-4868-bb9d-f80fcd7c316f.jpeg",
-        "img/9dfc7850-70d1-41e0-9842-0fb95e0a9b54.jpeg",
-        "img/38f4fca6-6105-4405-abb6-98dafb9e4e4f.jpeg",
-        "img/8641b008-756c-47a5-b19b-6c323f0f4ed4.jpeg",
-        "img/5439dd3b-9dac-4d74-ab58-1ca2204637ef.jpeg",
-        "img/masp1.jpg",
-        "img/masp2.jpg",
-        "img/masp3.jpg",
-        "img/masp4.jpg",
-        "img/ibi1.jpg",
-        "img/ibi2.png",
-        "img/ibi3.jpg",
-        "img/ibi4.jpg",
-        "img/mercado1.jpg",
-        "img/mercado2.jpg",
-        "img/mercado3.png",
-        "img/mercado4.png",
-        "img/liber1.jpg",
-        "img/liber2.jpg",
-        "img/liber3.jpg",
-        "img/liber4.jpg",
->>>>>>> 177dc05015e63d143e28ace3b956ca64348e5fc6
+        "/img/TurismoMR/marago4.jpg",
+        "/img/TurismoMR/marago1.jpg",
+        "/img/TurismoMR/marago3.jpeg",
+        "/img/TurismoMR/marago2.jpg",
+        "/img/TurismoMR/praia1.jpg",
+        "/img/TurismoMR/praia2.jpg",
+        "/img/TurismoMR/praia3.jpg",
+        "/img/TurismoMR/praia4.jpg",
+        "/img/TurismoMR/buggy1.jpg",
+        "/img/TurismoMR/buggy2.jpg",
+        "/img/TurismoMR/buggy3.jpg",
+        "/img/TurismoMR/artesanato4.jpeg",
+        "/img/TurismoMR/artesanato1.jpg",
+        "/img/TurismoMR/artesanato3.jpg",
       ];
 
       const modal = document.querySelector(".modal");

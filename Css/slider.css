@@ -54,7 +54,7 @@ section.slider{
     background-color: #ff7b00ee;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
     background-color: #ff7b00ee;
 }
 
@@ -68,6 +68,10 @@ section.slider{
 
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-left: -75%;
 }
 
 @media screen and (max-width: 900px) {
