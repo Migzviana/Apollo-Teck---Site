@@ -12,6 +12,50 @@
     <link rel="stylesheet" href="/Css/slider.css" />
     <script src="/Js/slide.js" defer></script>
     <title>Apollo Teck</title>
+    <style>
+      .product {
+        display: inline-block;
+        vertical-align: top;
+        margin: 20px;
+        padding: 10px;
+        width: 300px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .product a img {
+        opacity: 1;
+      }
+
+      .product a img:hover {
+        opacity: 0.5;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+      .price {
+        color: black;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .buy-btn {
+        background-color: #3498db;
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -83,21 +127,55 @@
 
     <section id="home">
       <div class="container1">
-        <h2>Home</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum culpa et
-          ad, itaque ipsum impedit ducimus vero fugit amet earum deserunt omnis
-          possimus minima ipsam quia est quaerat illo quidem.
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
-          repudiandae corporis possimus veritatis fugiat facilis nihil sapiente
-          facere delectus ex vel voluptatibus cumque recusandae quaerat
-          dignissimos. Illum, exercitationem recusandae? Cum. Lorem ipsum dolor
-          sit amet, consectetur adipisicing elit. Temporibus molestias sapiente
-          qui odio aspernatur vitae dolores ab optio accusamus sint pariatur,
-          maxime facere ullam eveniet, reiciendis dolore quia rerum architecto.
-        </p>
+        <h2 style="text-align: center">
+          Confira os nossos pacotes em promoção
+        </h2>
+        <div class="Produtos">
+          <div class="product">
+            <a href="">
+              <img
+                src="/img/mar-e-praia.jpg"
+                alt=""
+                style="width: 90%; height: 90%"
+              />
+            </a>
+            <h2>São Paulo</h2>
+            <h3>Tempo de Estadia: 4 dias</h3>
+            <p class="price">R$ 50,00</p>
+            <a href="São Paulo.html"
+              ><button class="buy-btn">Ver Mais</button></a
+            >
+          </div>
+        <div class="product">
+          <a href="">
+            <img
+              src="/img/mar-e-praia.jpg"
+              alt=""
+              style="width: 90%; height: 90%"
+            />
+          </a>
+          <h2>Rio de Janeiro</h2>
+          <h3>Tempo de Estadia: 5 dias</h3>
+          <p class="price">R$ 80,00</p>
+          <a href="São Paulo.html"
+            ><button class="buy-btn">Ver Mais</button></a
+          >
+        </div>
+
+        <div class="product">
+          <a href="">
+            <img src="/img/mar-e-praia.jpg" 
+            alt="" 
+            style="width: 90%; height: 90%;"
+            />
+          </a>
+          <h2>Itámaraca</h2>
+          <h3>Tempo de Estadia: 2 dias</h3>
+          <p class="price">R$ 65</p>
+          <a href="Itámaraca.html">
+            <button class="buy-btn">Ver Mais</button>
+          </a>
+        </div>
       </div>
     </section>
   </body>
