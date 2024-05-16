@@ -11,9 +11,9 @@
 </head>
 <body>
 <style>
-    main{
+    main {
         height: 100vh;
-        background-color:#34495E;
+        background-color: #34495E;
     }
     body {
         overflow-x: hidden;
@@ -48,7 +48,7 @@
                     <h4 class="my-0 fw-normal">Economica</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title" id="economicaPrice">R$ 50</h1>
+                    <h1 class="card-title pricing-card-title" id="economicaPrice">R$ 50.00</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>Serviço personalizado</li>
                         <li>Alojamento em hotéis econômicos</li>
@@ -58,9 +58,7 @@
                     <input type="checkbox" id="economicaWifi" onchange="calcularPreco('economica')"> Wi-Fi<br>
                     <input type="checkbox" id="economicaGuia" onchange="calcularPreco('economica')"> Guia Turístico<br>
                     <input type="checkbox" id="economicaAcessibilidade" onchange="calcularPreco('economica')"> Acessibilidade e Necessidades Especiais<br><br>
-                    <a href="/boletos/saleconomica.pdf"><button type="button" class="w-100 btn btn-lg btn-primary">
-                        Comprar
-                    </button></a>
+                    <button type="button" class="w-100 btn btn-lg btn-primary" onclick="gerarBoleto('economica')">Comprar</button>
                 </div>
             </div>
         </div>
@@ -70,7 +68,7 @@
                     <h4 class="my-0 fw-normal">Executiva</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title" id="executivaPrice">R$ 300</h1>
+                    <h1 class="card-title pricing-card-title" id="executivaPrice">R$ 300.00</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>Serviço personalizado</li>
                         <li>Hospedagem em hotéis de médio a alto padrão</li>
@@ -81,9 +79,7 @@
                     <input type="checkbox" id="executivaAlimentacao" onchange="calcularPreco('executiva')"> Alimentação<br>
                     <input type="checkbox" id="executivaGuia" onchange="calcularPreco('executiva')"> Guia Turístico<br>
                     <input type="checkbox" id="executivaAcessibilidade" onchange="calcularPreco('executiva')"> Acessibilidade e Necessidades Especiais<br><br>
-                    <a href="/boletos/salexecutiva.pdf"><button type="button" class="w-100 btn btn-lg btn-primary">
-                        Comprar
-                    </button></a>
+                    <button type="button" class="w-100 btn btn-lg btn-primary" onclick="gerarBoleto('executiva')">Comprar</button>
                 </div>
             </div>
         </div>
@@ -93,7 +89,7 @@
                     <h4 class="my-0 fw-normal">Primeira Classe</h4>
                 </div>
                 <div class="card-body">
-                    <h1 class="card-title pricing-card-title" id="primeiraPrice">R$ 400</h1>
+                    <h1 class="card-title pricing-card-title" id="primeiraPrice">R$ 400.00</h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>Experiência de luxo completa</li>
                         <li>Acomodações de luxo em hotéis renomados</li>
@@ -104,9 +100,7 @@
                     <input type="checkbox" id="primeiraAlimentacao" onchange="calcularPreco('primeira')"> Alimentação<br>
                     <input type="checkbox" id="primeiraGuia" onchange="calcularPreco('primeira')"> Guia Turístico<br>
                     <input type="checkbox" id="primeiraAcessibilidade" onchange="calcularPreco('primeira')"> Acessibilidade e Necessidades Especiais<br><br>
-                    <a href="/boletos/salprimeira.pdf"><button type="button" class="w-100 btn btn-lg btn-primary">
-                        Comprar
-                    </button></a>
+                    <button type="button" class="w-100 btn btn-lg btn-primary" onclick="gerarBoleto('primeira')">Comprar</button>
                 </div>
             </div>
         </div>
@@ -143,6 +137,26 @@ function calcularPreco(classe) {
         precoInicial += 50;
     }
     document.getElementById(classe + 'Price').textContent = 'R$ ' + precoInicial.toFixed(2);
+}
+
+function gerarBoleto(classe) {
+    var preco = parseFloat(document.getElementById(classe + 'Price').textContent.replace('R$ ', ''));
+    var boletos = {
+        300: "300.pdf",
+        330: "330.pdf",
+        335: "335.pdf",
+        350: "350.pdf",
+        365: "365.pdf",
+        380: "380.pdf",
+        385: "385.pdf",
+        415: "415.pdf"
+    };
+    var urlBoleto = "/boletos/" + boletos[preco];
+    if (urlBoleto) {
+        window.location.href = urlBoleto;
+    } else {
+        alert("Boleto não disponível para o valor selecionado.");
+    }
 }
 </script>
 </body>
